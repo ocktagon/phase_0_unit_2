@@ -167,20 +167,20 @@ create_accountability_groups(array)
 
 # 5. Reflection 
 # This was a very frustrating exercise for me, because I really couldn't figure out a 
-# simpler way to solve it.  It took me nearly 4-5 hours do the repetitive code I have put together and . 
+# simpler way to solve it.  It took me nearly 4-5 hours do the repetitive code I have put together. 
 
-# After tons of research found that the .shuffle! and sorting the units into array of arrays would be an ideal approach.
+# After scavenging the web I found that the .shuffle! and sorting the units into array of arrays would be an ideal approach.
 
-# As for trying to aovid putting the same people together more than once, I took the position of 
-# accepting that it would be fine to have duplicate people, as validating for that would make my code more inefficient.
-# Instead I put in a driver test to show 'false' in the rare case that 1 or more of the groups are exactly the same.  
+# As for trying to avoid putting the same people together more than once, I took the position of 
+# accepting that it would be fine to have some duplicate people, as validating for that would make my code more inefficient.
+# I put in a driver test to show 'false' in some cases where 1 or more of the groups are exactly the same, 
+# but couldn't figure out a better way to represent the test.
 
 # If this program is run 3 times in a row, it will definitely give 3 different outputs.  
 # I don't think it needs to remember the past, as I'm betting on 3 unit samples seldom being exactly the same.
-
 # It is intentionally designed to do a random shuffle of the total people, and return 3 units worth of 4-7 person groups.
 # The cool design that I think works well is that it can adapt to changes in classroom size, not just 26 people. 
-# The other thing is that each group number will never go under 4 people, and one of my driver tests was made to check that.
+# The other notable design is that each group number will never go under 4 people, and one of my driver tests was made to check that.
 
 # In a scenario where the number of units increased and I had higher probability of dupes, 
 # i might have to think about a more elegant design that focuses on getting unique samples.
