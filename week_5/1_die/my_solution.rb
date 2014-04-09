@@ -70,7 +70,7 @@ puts "Method called roll defined?"
 puts Die.instance_methods(false).include?(:roll)
 puts "Side method returns 6 for die with 6 sides?"
 puts Die.new(6).sides == 6
-puts "Side method returns 1..6 for die with 6 sides?"
+puts "Roll method returns 1..6 for die with 6 sides?"
 puts Die.new(6).roll.between?(1,6)
 
 
