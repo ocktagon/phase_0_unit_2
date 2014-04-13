@@ -30,7 +30,7 @@ STATE_DATA = {  "Alabama" => {population_density: 94.65, population: 4822023, re
                 "Montana" => {population_density: 6.86, population: 1005141, region: 8, regional_spread: 9},
                 "Nebraska" => {population_density: 23.97, population: 1855525, region: 6, regional_spread: 8},
                 "Nevada" => {population_density: 24.8, population: 2758931, region: 8, regional_spread: 9},
-                "New Hampshire" => {population_density: 147.0, population: 1320718, region: 1, region: 1, regional_spread: 2},
+                "New Hampshire" => {population_density: 147.0, population: 1320718, region: 1, regional_spread: 2},
                 "New Jersey" => {population_density: 1205, population: 8864590, region: 2, regional_spread: 3},
                 "New Mexico" => {population_density: 17.16, population: 2085538, region: 8, regional_spread: 7},
                 "New York" => {population_density: 415.3, population: 19570261, region: 2, regional_spread: 1},
