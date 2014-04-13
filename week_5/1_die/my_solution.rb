@@ -46,9 +46,10 @@
 
 
 # 4. Refactored Solution
+
 class Die
   def initialize(sides)
-    	raise ArgumentError.new("Only positive numbers allowed!") if sides < 1
+    	raise ArgumentError.new("Bad number!") if sides < 1
     	@sides = sides
   end
   def sides
