@@ -62,13 +62,11 @@ class Silverware
 
 end
 
-  def assert
-  	raise "Assertion failed!" unless yield
-	end
+def assert
+  raise "Assertion failed!" unless yield
+end
  
-# name = "bettysue"
-# assert { name == "bettysue" }
-# assert { name == "billybob" }
+
 knife1 = Silverware.new("knife")
 spoon1 = Silverware.new("spoon")
 fork1 = Silverware.new("fork")
@@ -108,6 +106,8 @@ puts removed_fork.clean_silverware
 
 
 
-
-
 # 5. Reflection 
+# I think going through the code and fixing errors as I went through
+#  was straightforward as an exercise.  I can definitely get used to 
+#  debugging.  I had difficult around driver tests - not sure what or 
+#  why I would put driver tests into this code.  

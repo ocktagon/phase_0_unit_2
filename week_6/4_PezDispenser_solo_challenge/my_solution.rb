@@ -1,7 +1,7 @@
 # U2.W6: PezDispenser Class from User Stories
 
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [with: Adam Dziuk].
 
 # 1. Review the following user stories:
 # - As a pez user, I'd like to be able to "create" a new pez dispenser with a group of flavors that 
@@ -15,22 +15,85 @@
 
 
 # 2. Pseudocode
+# CREATE Class PezDispenser
+#   DEFINE initialize method that takes single arg(*flavors)
+#     CREATE attr_accessor for flavors
+#     CREATE array pez that stores flavors
+  
+#   DEFINE pez_count method
+#     Count number of elements in array pez
+    
+#   DEFINE get_pez method 
+#     DEFINE variable my_pez
+#     Set variable to be sampled pez in array pez
+#     DELETE my_pez from array pez
+  
+#   DEFINE add_pez method that takes single arg (*flavor)
+#     FOR EACH flavor, PUSH into array pez
+  
+#   DEFINE see_all_pez 
+#     return array pez
 
-
+# END class PezDispenser  
+    
 
 # 3. Initial Solution
 
 class PezDispenser
- 
-# your code here!
- 
+  attr_accessor :pez
+  def initialize(*flavors)
+    @pez = []
+    flavors.flatten.each{ |flavor| pez << flavor}
+  end
+  
+  def pez_count
+    pez.length
+  end
+  
+  def get_pez
+    my_pez = pez.sample
+    pez.delete(my_pez)
+  end
+  
+  def add_pez(*flavor)
+    flavor.flatten.each{ |flavor| pez << flavor }
+  end
+  
+  def see_all_pez
+    pez
+  end
+
 end
  
 
-
 # 4. Refactored Solution
 
+# class PezDispenser
+#   attr_accessor :pez
+#   def initialize(*flavors)
+#     @pez = []
+#     flavors.flatten.each{ |flavor| pez << flavor}
+#   end
+  
+#   def pez_count
+#     pez.length
+#   end
+  
+#   def get_pez
+#     my_pez = pez.sample
+#     pez.delete(my_pez)
+#   end
+  
+#   def add_pez(*flavor)
+#     flavor.flatten.each{ |flavor| pez << flavor }
+#   end
+  
+#   def see_all_pez
+#     pez
+#   end
 
+# end
+ 
 
 
 
